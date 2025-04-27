@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Center the login container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Stylish Login Card */
+  .login-card {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    animation: popUp 0.6s ease;
+  }
+  
+  /* Title */
+  .login-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  /* Input Group */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Login Button */
+  .login-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .login-button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.05);
+  }
+  
+  /* Signup Link */
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 30px 20px;
+    }
+  
+    .login-title {
+      font-size: 26px;
+    }
+  
+    .input-group input {
+      font-size: 14px;
+    }
+  
+    .login-button {
+      font-size: 16px;
+    }
+  }
+  
+  /* Smooth popup animation */
+  @keyframes popUp {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  

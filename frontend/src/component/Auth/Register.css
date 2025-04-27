@@ -1,0 +1,144 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Center the register container */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Stylish Register Card */
+  .register-card {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    animation: slideIn 0.6s ease;
+  }
+  
+  /* Title */
+  .register-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  /* Input Group */
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 6px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #ff7e5f;
+    box-shadow: 0 0 5px rgba(255, 126, 95, 0.4);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Register Button */
+  .register-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .register-button:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+  }
+  
+  /* Login Link */
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .login-link a {
+    color: #ff7e5f;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 480px) {
+    .register-card {
+      padding: 30px 20px;
+    }
+  
+    .register-title {
+      font-size: 26px;
+    }
+  
+    .input-group input {
+      font-size: 14px;
+    }
+  
+    .register-button {
+      font-size: 16px;
+    }
+  }
+  
+  /* Smooth slide animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

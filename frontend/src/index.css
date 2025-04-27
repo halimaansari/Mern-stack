@@ -1,0 +1,71 @@
+/* App container basic styling */
+.app-container {
+  min-height: 100vh;
+}
+
+/* Home Page Stylish Design */
+.home-page {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+  padding: 20px;
+}
+
+.home-content {
+  text-align: center;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
